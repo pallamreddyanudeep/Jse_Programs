@@ -1,3 +1,4 @@
+package com;
 
 public final class Dono {
 public static void main(String[] args) {
