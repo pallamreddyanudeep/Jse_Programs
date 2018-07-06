@@ -13,7 +13,7 @@ public class Anagrams {
 			BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 			String s1=(br.readLine());
 			s1=s1.replaceAll("\\s", "");
-			System.out.println("enter second string");
+			System.out.println("enter second string");//commented
 			String s2=(br.readLine());
 			s2=s2.replaceAll("\\s", "");
 			if(s1.length()!=s2.length()) {
