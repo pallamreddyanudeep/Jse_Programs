@@ -42,6 +42,7 @@ public void display() {
 	y=sc.nextInt();
 	System.out.println(y*y);
 	t3.display();
+	sc.close();
 }
 }
 
@@ -54,4 +55,5 @@ public void display() {
 	System.out.println(z*z*z);
 }
 }
+
 
