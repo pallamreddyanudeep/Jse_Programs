@@ -42,6 +42,7 @@ public void data() {
 	setName(sc.next());
 	System.out.println("Enter age :");
 	setAge(sc.nextInt());
+	sc.close();
 	
 }
 public void display() {

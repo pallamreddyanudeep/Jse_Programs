@@ -2,7 +2,6 @@ package com.relationbetweenobjects.polymorphism;
 
 import java.util.Scanner;
 
-import javax.lang.model.util.Elements;
 
 public class Shapes {
 
