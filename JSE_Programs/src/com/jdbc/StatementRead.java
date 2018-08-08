@@ -24,7 +24,7 @@ ResultSet rs=null;
 		
 		//step4 execute query  
 		ResultSet rs=stmt.executeQuery("select * from company"); 
-		rs.setFetchSize(2);
+		
 		while(rs.next()) {  
 			stmt.setFetchSize(2);
 			System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getInt(3));  
