@@ -26,7 +26,7 @@ public class CopingMultipleFiles {
 			
 fis.close();
 		}
-		System.out.println(s);
+		//System.out.println(s);
 	FileOutputStream fos=new FileOutputStream("Multiple.txt",true);
 	byte[] b=s.getBytes();
 	fos.write(b);

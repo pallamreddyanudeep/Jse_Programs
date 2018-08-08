@@ -20,8 +20,8 @@ static String s1;
 		
 		System.out.println("enter some thingh");
 		s1=br.readLine();
-		s=(Student)Class.forName("Student").newInstance();
-		
+		//s=(Student)Class.forName("Student").newInstance();
+		s=new Student();
 		
 		try {
 			
@@ -45,7 +45,10 @@ static String s1;
 		
 	}
 	System.out.println("done"+i+"rows update");
+	}catch (Exception e) {
+	e.printStackTrace();
 	}
+		
 	finally {
 		jd.con.close();
 	}

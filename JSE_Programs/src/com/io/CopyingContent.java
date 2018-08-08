@@ -13,16 +13,21 @@ public class CopyingContent {
 	public static void main(String[] args) throws IOException {
 	FileInputStream fis=new FileInputStream("F:\\txt\\something.txt");
 	BufferedInputStream bis=new BufferedInputStream(fis);
-	int i;
-
+	int i,count=0;
+StringBuffer s1=new StringBuffer();
 	while((i=bis.read())!=-1) {
 		char ch=(char)i;
-	
-		s=s.concat(Character.toString(ch));
+	if(!(Character.isLetterOrDigit(ch))) {
+		count=count+1;
 	}
-
-	System.out.println(s);
 	
+			//s1=s1.append(ch);
+		s=s.concat(String.valueOf(ch));
+	}
+	
+	//s=s1.toString();
+	System.out.println(s);
+	System.out.println("number of special charecter are"+count);
 	String s2[]=s.split(" ");
 	System.out.println(" the number of words are "+ s2.length);
 	

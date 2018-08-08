@@ -39,30 +39,39 @@ public class CalenderDates {
 	Calendar c1=Calendar.getInstance();
 	Calendar c2=Calendar.getInstance();
 	c1.set(year1,month1,day1);
-	c2.set(year2,month1,day1);
-	Long MilliSecForc1=c1.getTimeInMillis();
-	Long MilliSecForc2=c2.getTimeInMillis();
-	System.out.println(MilliSecForc1);
-	System.out.println(MilliSecForc2);
+	c2.set(year2,month2,day2);
+	long MilliSecForc1=c1.getTimeInMillis();
+	long MilliSecForc2=c2.getTimeInMillis();
 
-	Long diffInMilis=MilliSecForc2-MilliSecForc1;
+	long diffInMilis=MilliSecForc2-MilliSecForc1;
 	if(diffInMilis<0) {
 		diffInMilis=-(diffInMilis);
 	}
-	System.out.println(diffInMilis);
+	
 	   long diffInSecond = diffInMilis / 1000;
 	    long diffInMinute = diffInMilis / (60 * 1000);
 	    long diffInHour = diffInMilis / (60 * 60 * 1000);
 	    long diffInDays = diffInMilis / (24 * 60 * 60 * 1000);
 	    long diffInWeek =diffInMilis/(7*24*60*60*1000);
 	    
+	    int diffYear = c2.get(Calendar.YEAR) - c1.get(Calendar.YEAR);
+	    int diffMonth = diffYear * 12 + c2.get(Calendar.MONTH) - c1.get(Calendar.MONTH);
+	  /*  System.out.println(c2.get(Calendar.MONTH));
+	    System.out.println(c1.get(Calendar.MONTH));*/
+	    if(diffMonth<0) {
+	    	diffMonth=-(diffMonth);
+	    }
+	    if(diffYear<0) {
+	    	diffYear=-(diffYear);
+	    }
 	    System.out.println("Difference in Seconds : " + diffInSecond);
 	    System.out.println("Difference in Minute : " + diffInMinute);
 	    System.out.println("Difference in Hours : " + diffInHour);
 	    System.out.println("Difference in Days : " + diffInDays);
 	    System.out.println("Difference in week : " + diffInWeek);
 
-	  
+	  System.out.println("Difference in months : "+diffMonth);
+	  System.out.println("Difference in year : "+diffYear);
 	 
 	}
 
