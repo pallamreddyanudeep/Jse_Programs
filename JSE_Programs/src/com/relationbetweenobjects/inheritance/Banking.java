@@ -5,7 +5,7 @@ public class Banking extends UserDetails{
 public static void main(String[] args) throws IOException {
 	
 
-	UserDetails u=new UserDetails();
+	UserDetails u=new UserDetails();// comments added
 	u.enterDetails();
 	u.showDetails();
 	u.withDraw();
