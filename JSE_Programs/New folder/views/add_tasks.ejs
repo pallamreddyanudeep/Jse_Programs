@@ -1,0 +1,59 @@
+<%- include layouts/header.ejs %>
+
+
+    
+                <h2 class="title_tasks" >Add Your Tasks:</h2>
+                <div class="row">
+    
+                    <div class="col-lg-12">
+                        
+                        <form action="" autocomplete="off" class="form_div" id="form_id">
+                    <fieldset>
+                            <legend>Personalise:</legend>
+                                <table cellpadding="10" class="table_class">
+                                    <tbody>
+                                        <tr class="rows row1">
+                                            <td class="td1 tds" >Task</td>
+                                            <td class="td2 tds">  </td>
+                                            <td class="td3 tds"><input type="text" class="task_class inputs" id="task_id" name="task_name" placeholder="Enter Task Name" title="Enter Task" required ></td>
+                                        </tr>
+                                        <tr class="rows row2">
+                                          <td class="td1 tds">Start</td>
+                                          <td class="td2 tds"> </td>
+                                          <td class="td3 tds"><input type="text" name="start" id="start_id" class="start_class inputs" placeholder="Enter Start Time" title="Enter Start Time" required ></td>
+                                        </tr>
+                                        <!-- <tr class="rows row3">
+                                            <td class="td1 tds">End</td>
+                                            <td class="td2 tds">  </td>
+                                            <td class="td3 tds"><input type="text" name="end" id="end_id" class="end_class inputs" placeholder="Enter End Time" title="Enter End Time" required ></td>
+                                        </tr> -->
+    
+                                        <tr class="rows row5">
+                                            <td class="td1 tds">Description </td>
+                                            <td class="td2 tds">  </td>
+                                            <td class="td3 tds"><textarea name="description" id="description_id" class="description_class inputs" placeholder="Describe Your Task" title="Description" required cols="30" rows="5"></textarea></td>
+                                        </tr>
+    
+                                        <tr class="rows row6">
+                                              <td class="td1 tds">
+                                                  
+                                              </td>
+                                              <td class="td2 tds"></td>
+    
+                                              <td class="td3 tds"><input title="Save" type="submit" value="Save" name="save_name" placeholder="save" id="save_id" class="save_class"  >
+                                            
+                                                <input type="button" value="Cancel" title="Cancel" name="cancel_name" placeholder="cancel" id="cancel_id" class="cancel_class" onclick="backTo()"  >
+                                            
+                                            </td>
+                                        </tr>
+    
+                                    </tbody>
+                                </table>
+                          
+                            </fieldset>
+                        </form>
+    
+    
+                    </div>
+                </div>
+                <%- include layouts/footer.ejs %>

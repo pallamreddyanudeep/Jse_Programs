@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel ="stylesheet" href="/../css/empstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <%- include layouts/header.ejs %>
+ <div class="wrapper">
+     <h1>Welcome <%=username%></h1>
+    <h1>Tasks</h1>
+    <hr>
+    <button class="add" onclick="addUser()"><i class="fa fa-tasks" style="font-size:20px;padding-right: 10px;"></i>Add</button>
+    <table border = "1" cellpadding="7" cellspacing="7">
+        <tr>
+        <th>NO</th>
+        <th>Task</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th width="120px">Active</th>
+        </tr>
+       
+        <% for(let i = 0; i < data.length; i++){ %>
+            <tr>
+                <td><%=i+1%></td>
+                <td><%=data[i].Task%></td>
+                <td><%=data[i].Start%></td>
+                <td><%=data[i].End%></td>
+                <td><%=data[i].Description%></td>
+                <td><%=data[i].Status%></td>
+                <td>
+                    <a class="edit" href="/edit"><i class="fa fa-edit" style="font-size:20px;"></i></a>
+                    <a class="delete" href="/delete/<%=data[i].Task%>&<%=username%>"><i class="fa fa-remove" style="font-size:20px;"></i></a>
+                </td>
+            </tr>
+       <% }%>
+    </table> 
+  
+  </div>
+  <div>  <%- include layouts/footer.ejs %></div>
+  <script src="/../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Account Creation</title>
+    <link href="css/regstyles.css" rel="stylesheet" media="all">
+</head>
+<body>
+        <div id="container"></div>
+    <%- include layouts/header.ejs %>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Create account</h2>
+                    <form method="POST" action="/registration/user">
+                                    <label class="label">Username</label>
+                                    <input class="input--style-4" type="text" name="UserName">
+                                    <label class="label">Employee ID</label>
+                                    <input class="input--style-4" type="text" name="Employee_ID">                     
+                                    <label class="label">Password</label>
+                                    <input class="input--style-4 js-datepicker" type="text" name="Password">
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                     <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email">                            
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone">                
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <%- include layouts/footer.ejs %>
+</body>
+</html>

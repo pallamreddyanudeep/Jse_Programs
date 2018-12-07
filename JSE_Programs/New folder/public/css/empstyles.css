@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 90%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 36px;
+    min-height: 639px;
+}
+h1{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.edit{
+  padding-left: 20px;
+  color: #18bb7c;
+}
+.delete{
+    padding-left: 40px;
+    color: #D23641;
+}
+.add{
+    background-color: #18bb7c;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+}

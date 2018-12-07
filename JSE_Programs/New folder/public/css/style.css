@@ -1,0 +1,189 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+width: 100%;
+height: 636px;
+/* background-color: red; */
+}
+
+.header_div
+{
+  background-color: black;
+  height: 90px;
+}
+.img_class
+{
+width: 60px;
+height: 50px;
+float: left;
+margin-left: 70px;
+margin-top: 20px;
+}
+.logo
+{
+color: #e4e0e0;
+float: left;
+margin-top: 20px;
+margin-left: 16px;
+font-size: 30px;
+font-family: cursive;
+}
+.main
+{
+width: 100%;
+height: 635px;
+/* background-color: yellow; */
+}
+.row
+{
+height: 450px;
+width: 50%;
+/* background-color: aqua; */
+float: left;
+margin-left: 320px;
+  margin-top: -45px;
+}
+.title_tasks
+{
+display: inline-block;
+ float: right;
+margin-right: 608px;
+margin-bottom: -3px;
+margin-top: 10px;
+font-size: 25px;
+font-family: sans-serif;
+}
+fieldset
+{
+    /* border: 0; */
+border-radius: 30px;
+}
+.form_div
+{
+    /* background: whitesmoke; */
+width: 60%;
+float: left;
+margin-left: 120px;
+margin-top: 63px;
+}
+.tds
+{
+ font-size: 19px;
+ font-family: monospace;
+
+  
+    font-weight: 900;
+
+}
+
+
+
+.inputs
+{
+ padding: 6px 11px;
+    box-shadow: 0 10px 11px rgba(0,0,0,.2);
+    border: none;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+}
+.foot
+{
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #272527;
+}
+.save_class
+{
+    cursor: pointer;
+}
+.cancel_class
+{
+    cursor: pointer;
+}
+.footer
+{
+    background-color: #272527;
+    height: 40px;
+}
+.foot_1
+{
+    color: white;
+    font-size: 13px;
+    float: left;
+    margin-left: 17px;
+    margin-top: 12px;
+}
+.foot_2
+{
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin-right: 17px;
+    margin-top: 13px;
+}
+ /* for success.ejs */
+
+
+ .middle1
+ {
+    height: 506px;
+ }
+ .middle2
+ {
+    width: 55%;
+    height: 65%;
+    background-color: #dadada;
+    color: black;
+    float: left;
+    margin-left: 320px;
+    border-radius: 50px;
+    margin-top: 75px;
+}
+.middle2_head
+{
+    font-size: 80px;
+    float: left;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.middle2_content
+{
+    float: left;
+    font-size: 26px;
+    margin-left: 225px;
+    margin-top: 35px;
+}
+
+
+.sucess_img
+{
+    width: 61px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 371px;
+}
+
+
+.click_login
+{
+    float: right;
+    margin-top: 90px;
+    margin-right: -99px;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: #2cc73b;
+    border: none;
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+    box-shadow: 0 11px 7px rgba(0,0,0,.2);
+}
+.click_login:hover{
+    background-color: #272527;
+    color: #e8e8e0;
+}
